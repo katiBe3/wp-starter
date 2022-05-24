@@ -4,7 +4,7 @@ config:
   php: '7.4' # PHP Version
   composer_version: '2' # set to 1 | 1-latest | 2 | 2-latest https://docs.lando.dev/config/php.html#installing-composer
   via: apache # nginx or apache
-  webroot: wp
+  webroot: wordpress
   database: mysql # mysql or mariadb
   xdebug: debug
   config:
