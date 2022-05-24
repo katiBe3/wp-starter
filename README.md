@@ -10,4 +10,5 @@ Comes with XDebug and WP-CLI.🎁
 1. Enter: Database name `wordpress`, username: `wordpress`, password: `wordpress`, host: `database`
 
 ## Useful commands 
+- Changed `lando.yml`? Build again 📦 with `lando rebuild`
 - 💣 Destroy your app with `lando destroy -y`
