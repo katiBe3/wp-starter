@@ -1,5 +1,5 @@
 Easy peasy Wordpress development starter pack. 
-Comes with XDebug and WP-CLI. 
+Comes with XDebug and WP-CLI.🎁
 
 ## Let's get started!🎈
 1. Configure `.lando.yml` and insert your project name
@@ -10,4 +10,4 @@ Comes with XDebug and WP-CLI.
 1. You're done? Kill your app with `lando destroy -y`
 
 ## Useful commands 
-- You're all done? 💣 Destroy your app with `lando destroy -y`
+- 💣 Destroy your app with `lando destroy -y`
