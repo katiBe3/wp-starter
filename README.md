@@ -7,6 +7,7 @@ Comes with XDebug and WP-CLI.🎁
 1. Change to WordPress installation folder: `cd wordpress` 
 1. Download brandnew WordPress: `lando wp core download` 
 1. Head over to `projectname.lndo.site/wordpress/` and finish the installation. 
+1. Enter: Database name `wordpress`, username: `wordpress`, password: `wordpress`, host: `database`
 
 ## Useful commands 
 - 💣 Destroy your app with `lando destroy -y`
