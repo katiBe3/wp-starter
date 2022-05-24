@@ -1,4 +1,4 @@
-Easy peasy Wordpress development environment starter pack. 
+Easy peasy WordPress development environment starter pack.
 Comes with XDebug and WP-CLI.🎁
 
 **Precondition:** Make sure to install https://lando.dev/. Done? Let's go!👇
