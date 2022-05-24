@@ -1,5 +1,5 @@
 Easy peasy Wordpress development starter pack. 
-Comes with XDebug and WP-CLI.🎁Cancel changes
+Comes with XDebug and WP-CLI.🎁
 
 **Precondition:** Make sure to install https://lando.dev/. Done? Let's go!👇
 
