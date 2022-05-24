@@ -1,7 +1,7 @@
 Easy peasy Wordpress development starter pack. 
-Comes with XDebug and WP-CLI.🎁
+Comes with XDebug and WP-CLI.🎁Cancel changes
 
-Precondition: Make sure to install https://lando.dev/. Done? Let's go!👇
+**Precondition:** Make sure to install https://lando.dev/. Done? Let's go!👇
 
 ## Let's get started!🎈
 1. Configure `.lando.yml` and insert your project name
@@ -12,5 +12,6 @@ Precondition: Make sure to install https://lando.dev/. Done? Let's go!👇
 1. Enter: Database name `wordpress`, username: `wordpress`, password: `wordpress`, host: `database`
 
 ## Useful commands 
-- Changed `lando.yml`? Rebuild project 📦 with `lando rebuild`
-- 💣 Destroy your app with `lando destroy -y`
+- Stop your containers & services with `lando stop`
+- Changed `lando.yml`? Rebuild containers 📦 with `lando rebuild`
+- 💣 Destroy your containers with `lando destroy -y`
