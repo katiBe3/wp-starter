@@ -7,7 +7,6 @@ Comes with XDebug and WP-CLI.🎁
 1. Prepare WordPress installation: `mkdir wordpress cd wordpress` 
 1. Download brandnew WordPress: `lando wp core download` 
 1. Head over to (wp-{project}.lndo.site/wordpress/) and finish the installation. 
-1. You're done? Kill your app with `lando destroy -y`
 
 ## Useful commands 
 - 💣 Destroy your app with `lando destroy -y`
