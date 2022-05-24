@@ -1,7 +1,7 @@
 Easy peasy WordPress development environment starter pack.
 Comes with XDebug and WP-CLI.🎁
 
-**Precondition:** Make sure to install https://lando.dev/. Done? Let's go!👇
+**Preconditions:** Works with VSCode & Windows. Make sure to install https://lando.dev/. Done? Let's go!👇
 
 ## Let's get started!🎈
 1. Configure `.lando.yml` and insert your project name
