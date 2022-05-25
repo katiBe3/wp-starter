@@ -1,4 +1,4 @@
-name: wpwatchlist #project name
+name: project-name #Your project name
 recipe: wordpress
 config:
   php: '7.4' # PHP Version
@@ -10,6 +10,11 @@ config:
   config:
     php: .vscode/php.ini
 services:
+  appserver:
+    overrides:
+      volumes:
+          - ./src/project-name:/app/wordpress/wp-content/plugins/project-name #Change plugin-name.
+          #- ./src/project-name:/app/wordpress/wp-content/themes/project-name #For theme development.
   pma:
       type: phpmyadmin # Spin up a phpmyadmin container called "pma".
       hosts:
