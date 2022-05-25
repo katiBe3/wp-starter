@@ -1,4 +1,4 @@
-Easy peasy WordPress development environment starter pack.
+Easy peasy WordPress plugin development environment starter pack.
 
 Works with VSCode & 🪟 **Windows**. Comes with XDebug and WP-CLI.🎁
 
