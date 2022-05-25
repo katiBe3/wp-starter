@@ -5,6 +5,7 @@ Comes with XDebug and WP-CLI.🎁
 
 ## Let's get started!🎈
 1. Replace **project-name** in `lando.yml` (adjust more ⚙️ if you like)
+1. Replace **project-name** in `launch.json` for smooth debugging.
 1. In the project root: run `lando start`
 1. Install Wordpress: run `lando install-wordpress`...⌛
 
