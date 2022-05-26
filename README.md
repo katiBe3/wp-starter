@@ -14,7 +14,7 @@ Works with VSCode & 🪟 **Windows**. Comes with XDebug and WP-CLI.🎁
 
 ## Useful commands 
 - Stop containers & services with `lando stop`
-- Changed `lando.yml`? Rebuild containers 📦 with `lando rebuild`
+- Changed `lando.yml`? Ran into problems? Rebuild containers 📦 with `lando rebuild`
 - 💣 Destroy your containers with `lando destroy -y`
 
 ## 📖 Resources
