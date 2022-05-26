@@ -5,10 +5,12 @@ Works with VSCode & 🪟 **Windows**. Comes with XDebug and WP-CLI.🎁
 **Preconditions:** Make sure to install [Lando](https://lando.dev/). Done? Let's go!👇
 
 ## Let's get started!🎈
+1. ✂️ Copy your [plugin sceleton](https://wppb.me/) into the `src` folder.
 1. Replace **project-name** in `lando.yml` (adjust more ⚙️ if you like)
 1. Replace **project-name** in `launch.json` for smooth debugging.
 1. In the project root: run `lando start`
 1. Install Wordpress: run `lando install-wordpress`...⌛
+1. Happy coding!🥳
 
 ## Useful commands 
 - Stop containers & services with `lando stop`
