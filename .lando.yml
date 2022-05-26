@@ -25,6 +25,5 @@ tooling:
     description: Installs WordPress in 5 seconds
     cmd:
       # For more commands see wp-cli docs: https://github.com/wp-cli/core-command
-      - mkdir wordpress   #Create folder 'wordpress'
       - wp core download --path=wordpress #Download wordpress to path 'wordpress'
       - wp config create --path=wordpress --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database #Create config with given values. Done!
