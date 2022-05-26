@@ -1,6 +1,6 @@
 Easy peasy WordPress plugin development environment starter pack.
 
-Works with VSCode & 🪟 **Windows**. Comes with XDebug and WP-CLI.🎁
+Works with VSCode & 🪟 **Windows**. Comes with Xdebug 3 and WP-CLI.🎁
 
 **Preconditions:** Make sure to install [Lando](https://lando.dev/). Done? Let's go!👇
 
