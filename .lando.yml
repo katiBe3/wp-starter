@@ -20,9 +20,9 @@ services:
       hosts:
         - database
 tooling:
-  install-wordpress: #creates command: 'lando install-wordpress'
+  download-wordpress: #creates command: 'lando download-wordpress'
     service: appserver
-    description: Installs WordPress in 5 seconds
+    description: Downloads WordPress in 10 seconds
     cmd:
       # For more commands see wp-cli docs: https://github.com/wp-cli/core-command
       - wp core download --path=wordpress #Download wordpress to path 'wordpress'
