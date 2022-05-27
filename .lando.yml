@@ -1,24 +1,28 @@
-name: project-name #Your project name
+name: wp-starter #Here comes your project name
 recipe: wordpress
 config:
-  php: '7.4' # PHP Version
-  composer_version: '2' # set to 1 | 1-latest | 2 | 2-latest https://docs.lando.dev/config/php.html#installing-composer
-  via: apache # apache or nginx
+  php: '8.1' # PHP version
+  composer_version: '2' # Composer version
+  via: nginx # apache or nginx
   webroot: wordpress
-  database: mysql # mysql or mariadb
-  xdebug: debug
+  database: mariadb # mysql or mariadb
+  xdebug: debug #custom xdebug config. More info: https://docs.lando.dev/guides/lando-with-vscode.html#getting-started
   config:
-    php: .vscode/php.ini
+    php: config/php.ini
 services:
   appserver:
     overrides:
       volumes:
-          - ./src/project-name:/app/wordpress/wp-content/plugins/project-name #Change plugin-name.
-          #- ./src/project-name:/app/wordpress/wp-content/themes/project-name #For theme development.
+          - ./src/wp-starter:/app/wordpress/wp-content/plugins/wp-starter #Replace with your own plugin.
+          #- ./src/theme-name:/app/wordpress/wp-content/themes/project-name #For theme development.
   pma:
-      type: phpmyadmin # Spin up a phpmyadmin container called "pma".
+      type: phpmyadmin # Creates a phpmyadmin container called "pma".
       hosts:
         - database
+  mailhog:
+    type: mailhog # Creates mailhog container called "mailhog".
+    hogfrom: # Hog from appserver or nginx
+      - appserver
 tooling:
   download-wordpress: #creates command: 'lando download-wordpress'
     service: appserver
