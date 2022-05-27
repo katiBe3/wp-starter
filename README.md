@@ -1,19 +1,19 @@
-Easy peasy WordPress plugin development environment starter pack.
+Quick & simple WordPress plugin development server setup.
 
 Works with VSCode & 🪟 **Windows**. Comes with Xdebug 3 and WP-CLI.🎁
 
 **Preconditions:** Make sure to install [Lando](https://lando.dev/). Done? Let's go!👇
 
 ## Let's get started!🎈
-1. Create `src` folder. ✂️ Copy your [plugin sceleton](https://wppb.me/) into the `src` folder.
-1. Replace **project-name** in `lando.yml` (adjust more ⚙️ if you like)
+1. Replace sample plugin **wp-starter** in `src\plugins` - or use it for a test ride.
+1. Replace **project-name** in `lando.yml` (adjust more config ⚙️ if you like)
 1. Replace **project-name** in `launch.json` for smooth debugging.
 1. In the project root: run `lando start`
 1. Download Wordpress: run `lando download-wordpress`...⌛
+1. Check important infos about your app: `lando info`
 Happy coding!🥳
 
 ## Useful commands 
-- Check important infos about your app: `lando info`
 - Stop containers & services with `lando stop`
 - Changed `lando.yml`? Ran into problems? Rebuild containers 📦 with `lando rebuild`
 - 💣 Destroy your containers with `lando destroy -y`
