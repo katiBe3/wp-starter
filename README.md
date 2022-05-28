@@ -1,6 +1,6 @@
-Quick & simple WordPress plugin development server setup.
+Quick & simple WordPress plugin development server setup.🎁
 
-Works with VSCode & 🪟 **Windows**. Comes with Xdebug 3 and WP-CLI.🎁
+Optimized for VSCode & 🪟 **Windows**. Comes with Xdebug 3 preconfigured for easy debugging.🐛
 
 **Preconditions:** Make sure to install [Lando](https://lando.dev/). Done? Let's go!👇
 
