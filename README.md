@@ -6,7 +6,7 @@ Optimized for VSCode & 🪟 **Windows**. Comes with Xdebug 3 preconfigured for e
 
 ## Let's get started!🎈
 1. Replace sample plugin **wp-starter** in `src\plugins` - or use it for a test ride.
-1. Rename **project-name** in `lando.yml` and `launch.json` 
+1. Rename **wp-starter** in `lando.yml` and `launch.json` 
 1. In the project root: run `lando start`
 1. Download Wordpress: run `lando download-wordpress`...⌛
 1. Check important infos about your app: `lando info`
