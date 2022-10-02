@@ -24,5 +24,3 @@ PS: You can change the server config (php version, database, web server etc.) in
 - [How to use Lando with VSCode](https://docs.lando.dev/guides/lando-with-vscode.html)
 - [All Lando commands explained](https://docs.lando.dev/cli/config.html)
 - [Great example of a more advanced Lando setup for Wordpress](https://github.com/timothyjensen/lando-wordpress)
-
-PPS: Yes, I'm still in love with [WordPress](https://wordpress.org/download/) after more than 12 years. Can't let go, haha! 🥰
