@@ -6,7 +6,7 @@ Optimized for VSCode & 🪟 **Windows**. Comes with Xdebug 3 preconfigured for e
 
 ## Let's get started!🎈
 1. Replace sample plugin **wp-starter** in `src\plugins` - or use it for a test ride.
-1. Rename **wp-starter** in `lando.yml` and `launch.json` 
+1. Rename **wp-starter** in `lando.yml` and `.vscode\launch.json` 
 1. In the project root: run `lando start`
 1. Download Wordpress: run `lando download-wordpress`...⌛
 1. Check important infos about your app: `lando info`
@@ -17,7 +17,7 @@ Happy coding!🥳
 - Changed `lando.yml`? Ran into problems? Rebuild containers 📦 with `lando rebuild`
 - 💣 Destroy your containers with `lando destroy -y`
 
-PS: You can change the server config (php version, database, web server etc.) in `lando.yml`⚙️.
+PS: You can change the server config (php version, database, web server, settings for wp-config.php etc.) in `lando.yml`⚙️.
 
 ## 📖 Resources
 - [Configure Lando for WordPress](https://docs.lando.dev/wordpress/config.html)
