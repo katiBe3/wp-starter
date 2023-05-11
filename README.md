@@ -1,23 +1,22 @@
-Quick & simple WordPress plugin development server setup.🎁
+Quick & simple WordPress plugin development server setup.
 
-Optimized for VSCode & 🪟 **Windows**. Comes with Xdebug 3 preconfigured for easy debugging.🐛
+Works with VSCode & 🪟 **Windows**. Comes with Xdebug 3 and WP-CLI.🎁
 
 **Preconditions:** Make sure to install [Lando](https://lando.dev/). Done? Let's go!👇
 
 ## Let's get started!🎈
 1. Replace sample plugin **wp-starter** in `src\plugins` - or use it for a test ride.
-1. Rename **wp-starter** in `lando.yml` and `.vscode\launch.json` 
+1. Replace **project-name** in `lando.yml` (adjust more config ⚙️ if you like)
+1. Replace **project-name** in `.vscode\launch.json` for smooth debugging.
 1. In the project root: run `lando start`
-1. Download Wordpress: run `lando download-wordpress`...⌛
+1. Setup Wordpress: run `lando setup-wordpress`...⌛
 1. Check important infos about your app: `lando info`
 Happy coding!🥳
 
 ## Useful commands 
 - Stop containers & services with `lando stop`
-- Changed `lando.yml`? Ran into problems? Rebuild containers 📦 with `lando rebuild`
+- Changed `lando.yml`? Ran into problems? Rebuild containers 📦 with `lando rebuild y`
 - 💣 Destroy your containers with `lando destroy -y`
-
-PS: You can change the server config (php version, database, web server, settings for wp-config.php etc.) in `lando.yml`⚙️.
 
 ## 📖 Resources
 - [Configure Lando for WordPress](https://docs.lando.dev/wordpress/config.html)
