@@ -5,8 +5,8 @@ config:
   composer_version: '2' # Composer version
   via: nginx # apache or nginx
   webroot: wordpress
+  xdebug: true # Enable xdebug
   database: mariadb # mysql or mariadb
-  xdebug: debug #custom xdebug config. More info: https://docs.lando.dev/guides/lando-with-vscode.html#getting-started
   config:
     php: config/php.ini
 services:
@@ -14,7 +14,7 @@ services:
     overrides:
       volumes:
           - ./src/wp-starter:/app/wordpress/wp-content/plugins/wp-starter #Replace with your own plugin.
-          #- ./src/theme-name:/app/wordpress/wp-content/themes/project-name #For theme development.
+          #- ./src/wp-starter:/app/wordpress/wp-content/themes/wp-starter #For theme development.
   pma:
       type: phpmyadmin # Creates a phpmyadmin container called "pma".
       hosts:
@@ -24,10 +24,13 @@ services:
     hogfrom: # Hog from appserver or nginx
       - appserver
 tooling:
-  download-wordpress: #creates command: 'lando download-wordpress'
-    service: appserver
-    description: Downloads WordPress in 10 seconds
-    cmd:
-      # For more commands see wp-cli docs: https://github.com/wp-cli/core-command
-      - wp core download --path=wordpress #Download wordpress to path 'wordpress'
-      - wp config create --path=wordpress --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database #Create config with given values. Done!
+  setup-wordpress: #creates command: 'lando setup-wordpress'
+    service: appserver # where to run the command
+    description: Downloads and installs WordPress in 10 seconds
+    cmd: # For more commands see wp-cli docs: https://github.com/wp-cli/core-command
+      # Download wordpress (US version)
+      - wp core download --locale=en_US --path=wordpress
+      # Create wp-config.php with defaults. Allow user to install files into folders (NEVER use in production!).
+      - wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database --path=wordpress --extra-php="define('FS_METHOD','direct');"
+      # Install wordpress. Change title, admin_user, admin_password and admin_email.
+      - wp core install --url=https://wp-starter.lndo.site/ --title="wp-starter" --admin_user=admin --admin_password=admin --admin_email=admin@wp-starter.wherever --path=wordpress
